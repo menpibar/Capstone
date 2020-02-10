@@ -18,15 +18,18 @@ From the csv file of Module 3, I took the geospatial data of the neighbourhoods 
 Using Folium I created a map for Toronto. I looked for the coordinates in the internet. Then I added markers representing all the neighbourhoods on it.
 ### Using the Foursquare API
 I searched for my Foursquare credentials created in previous weeks. Then I wanted to test my dataset with the API so I did a request for only one neighbourhood location. It returned me some venues as expected, so I procceded to define a function to get all the venues of all the eighbourhoods in the dataset.\
-I got a big dataframe of shape (9935, 7). That was because a lot of values were duplicated, as some neighbourhoods locations are near each other. So I dropped all the duplicated values, resulting in a dataframe  of shape (801,7). That means that in Toronto there are 801 distinct bank offices, according to Foursquare. I added markers for each venue to the map I prepared before. The map can be seen in the code of the Jupyter notebook.\
+I got a big dataframe of shape (9935, 7). That was because a lot of values were duplicated, as some neighbourhoods locations are near each other. So I dropped all the duplicated values, resulting in a dataframe  of shape (801,7). That means that in Toronto there are 801 distinct bank offices, according to Foursquare. I added markers for each venue to the map I prepared before. The map can be seen in the code of the Jupyter notebook.
 ## Results
 ### Businesses per neighbourhood
 Then, I wanted to analyse the data to see how many similar bank offices each neighbourhood had. In this way, I could determine which neighbourhoods had the best density of offices to open a new one.\
 I plotted a boxplot chart to visualize the distribution of the data. This chart can be seen in the lines of code. There was only an extreme value at 20 offices in the neighbourhood. I looked then for the mean of businesses per neighbourhood, and it was 5. The mean was the target of my project, as the neighbourhoods that had that density were nor very saturated nor empty. I searched for the venues with that number of offices. They were 7:    
-- Clairlea,Golden Mile,Oakridge
-- Deer Park,Forest Hill SE,Rathnelly,South Hill,...
-- Downsview West
-- Downsview,North Park,Upwood Park
-- Rosedale
-- Woburn
+**- Clairlea,Golden Mile,Oakridge
+**- Deer Park,Forest Hill SE,Rathnelly,South Hill,...
+**- Downsview West
+**- Downsview,North Park,Upwood Park
+**- Rosedale
+**- Woburn
 - Woodbine Gardens,Parkview Hill
+Finally, I created another map to visualize the areas where opening the bank office of DataBank is recommended. That map can be seen also in the lines of code.
+### Main competitor
+Afterwards, I wanted to search the main competitor DataBanks will face, so I wrangled the data retrieved from Foursquare to see the bank that has the highest number of offices. I created an histogram to visualize the distribution -available in the lines of code- and used the describe method to see that the highest number of offices were 36. After that, I looked for it in the dataset. The main competitor for our small DataBank is **Western Union @ Money Mart.*
