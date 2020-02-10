@@ -23,13 +23,20 @@ I got a big dataframe of shape (9935, 7). That was because a lot of values were 
 ### Businesses per neighbourhood
 Then, I wanted to analyse the data to see how many similar bank offices each neighbourhood had. In this way, I could determine which neighbourhoods had the best density of offices to open a new one.\
 I plotted a boxplot chart to visualize the distribution of the data. This chart can be seen in the lines of code. There was only an extreme value at 20 offices in the neighbourhood. I looked then for the mean of businesses per neighbourhood, and it was 5. The mean was the target of my project, as the neighbourhoods that had that density were nor very saturated nor empty. I searched for the venues with that number of offices. They were 7:    
-**- Clairlea,Golden Mile,Oakridge
-**- Deer Park,Forest Hill SE,Rathnelly,South Hill,...
-**- Downsview West
-**- Downsview,North Park,Upwood Park
-**- Rosedale
-**- Woburn
+- Clairlea,Golden Mile,Oakridge
+- Deer Park,Forest Hill SE,Rathnelly,South Hill,...
+- Downsview West
+- Downsview,North Park,Upwood Park
+- Rosedale
+- Woburn
 - Woodbine Gardens,Parkview Hill
 Finally, I created another map to visualize the areas where opening the bank office of DataBank is recommended. That map can be seen also in the lines of code.
 ### Main competitor
-Afterwards, I wanted to search the main competitor DataBanks will face, so I wrangled the data retrieved from Foursquare to see the bank that has the highest number of offices. I created an histogram to visualize the distribution -available in the lines of code- and used the describe method to see that the highest number of offices were 36. After that, I looked for it in the dataset. The main competitor for our small DataBank is **Western Union @ Money Mart.*
+Afterwards, I wanted to search the main competitor DataBanks will face, so I wrangled the data retrieved from Foursquare to see the bank that has the highest number of offices. I created an histogram to visualize the distribution -available in the lines of code- and used the describe method to see that the highest number of offices were 36. After that, I looked for it in the dataset. The main competitor for our small DataBank is *Western Union @ Money Mart.*
+## Discussion
+I recommend the small bank to open the office on the neighbourhoods stated above. However, I would advert them that the results might have been affected by certain limitations.
+- Firstly, that the data used did not took into account socio-economic factors, which would determine why in some neighbourhoods there are more offices than in others.
+- Secondly, the Foursquare dataset might be incomplete and it migh not comprise all the venues of the city of Toronto.
+- Lastly, the data retrieved is a snapshot of the offices active nowadays. However, there is no historical records to look in which neighbourhoods banks are landing or taking off.
+## Conclusion
+Despite the limitations discussed in the previous section. It could be argued that this project has created value for DataBank from a dataset and it may help in the decision-making process in the DataBank headquarters. In the end, that is one of the goal of the Data Science, so we could say that this project fulfills its purposes.
